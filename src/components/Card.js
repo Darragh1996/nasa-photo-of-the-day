@@ -7,10 +7,15 @@ import { LinkBtn } from './LinkBtn';
 function Card(props){
 
     return (
-        <div className='Card'>
+        <div className='card'>
             <img src={props.image}/>
-            <div>
+            <div className='text-content'>
+                <div className="card-header">
                 <h1>{props.title}</h1>
+                <p>{props.date}</p>
+                </div>
+                <p>{props.explanation}</p>
+                <button>HD Image</button>
             </div>
         </div>
     )

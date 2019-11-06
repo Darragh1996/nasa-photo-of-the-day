@@ -25,7 +25,7 @@ const [state, setState] = useState({});
 
   return (
     <div className="App">
-        <Card image={state.url} title={state.title}/>
+        <Card image={state.url} title={state.title} explanation={state.explanation} date={state.date}/>
     </div>
   );
 }
