@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
@@ -16,8 +17,9 @@ code {
   display: flex;
   width: 1200px;
   margin: 20px auto;
-  background-color: #bbbab9;
+  background-color: #e4e0db;
   border-radius: 10px;
+  box-shadow: 3px 3px #c7c6c5;
 }
 
 .text-content {
@@ -25,11 +27,22 @@ code {
 }
 
 .text-content p {
-  margin: 5px;
+  margin: 5px 5px 20px 5px;
   padding: 5px;
+  
+}
+
+.text-content a {
+  text-decoration: none;
+  background-color: white;
+  padding: 5px;
+  margin-top: 25px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .card-header {
+  color: purple;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -38,4 +51,5 @@ code {
 img {
   max-width: 400px;
   height: auto;
+  /* overflow: hidden; */
 }

@@ -15,7 +15,7 @@ function Card(props){
                 <p>{props.date}</p>
                 </div>
                 <p>{props.explanation}</p>
-                <button>HD Image</button>
+                <a href={props.hdurl}>HD Image</a>
             </div>
         </div>
     )
