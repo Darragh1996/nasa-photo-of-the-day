@@ -6,12 +6,12 @@ import axios from "axios";
 import { Card } from "./components/CardComponent/Card";
 
 function App() {
-  const [nasaInfo, setNasaInfo] = useState([]);
+  const [nasaInfo, setNasaInfo] = useState();
 
   useEffect(() => {
     axios
       .get(
-        "https://api.nasa.gov/planetary/apod?api_key=1F5F9mMau9iKruv7BeHJOWu1C34yR20vUAbzJYiN"
+        "https://api.nasa.gov/planetary/apod?api_key=1F5F9mMau9iKruv7BeHJOWu1C34yR20vUAbzJYiN&date=2012-03-14"
       )
       .then(res => {
         setNasaInfo(res.data);
