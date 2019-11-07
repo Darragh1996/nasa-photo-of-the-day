@@ -5,7 +5,7 @@ import { Header } from "./Header";
 const CardDiv = styled.div`
   display: flex;
   width: 1200px;
-  height: auto;
+  /* height: auto; */
   margin: 20px auto;
   background-color: #e4e0db;
   border-radius: 10px;
@@ -17,10 +17,11 @@ function Card(props) {
     <CardDiv>
       <img src={props.image} />
       <Header
-        title={props.title}
-        date={props.date}
-        explanation={props.explanation}
-        hdurl={props.hdurl}
+        // title={props.title}
+        // date={props.date}
+        // explanation={props.explanation}
+        // hdurl={props.hdurl}
+        card={props.card}
       />
     </CardDiv>
   );

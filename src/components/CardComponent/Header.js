@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+// import DropDown from './DropDown';
 
 const TextContent = styled.div`
   margin-left: 20px;
@@ -19,15 +20,19 @@ const TextContent = styled.div`
 `;
 
 function Header(props) {
+    console.log(props);
+    const {title, date, explanation, hdurl} = props.card;
   return (
+      <>
     <TextContent>
       <div className="card-header">
-        <h1>{props.title}</h1>
-        <p>{props.date}</p>
+        <h1>{title}</h1>
+        <p>{date}</p>
       </div>
-      <p>{props.explanation}</p>
-      <a href={props.hdurl}>HD Image</a>
+      <p>{explanation}</p>
+      <a href={hdurl}>HD Image</a>
     </TextContent>
+    </>
   );
 }
 
