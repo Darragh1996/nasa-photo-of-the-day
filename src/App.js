@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
-import { Card } from "./components/Card";
+import { Card } from "./components/CardComponent/Card";
 
 function App() {
   const [nasaInfo, setNasaInfo] = useState([]);

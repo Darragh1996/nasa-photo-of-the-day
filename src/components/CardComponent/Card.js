@@ -1,9 +1,20 @@
 import React, { useEffect, useState } from "react";
+import styled from 'styled-components';
+
+const CardDiv = styled.div`
+    display: flex;
+    width: 1200px;
+    height: auto;
+    margin: 20px auto;
+    background-color: #e4e0db;
+    border-radius: 10px;
+    box-shadow: 3px 3px #c7c6c5;
+`
 
 function Card(props){
 
     return (
-        <div className='card'>
+        <CardDiv>
             <img src={props.image}/>
             <div className='text-content'>
                 <div className="card-header">
@@ -13,7 +24,7 @@ function Card(props){
                 <p>{props.explanation}</p>
                 <a href={props.hdurl}>HD Image</a>
             </div>
-        </div>
+        </CardDiv>
     )
 
 }
